@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Baterias para Iphone</title>
+    <link rel="stylesheet" href="/Style/style.css">
+</head>
+<body>
+
+    <header class="header-landing">
+        <div class="wrap-logo">
+            <img src="/Img/OLITECHLOGO.png" alt="" class="logo-header">
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="wrap-hero-section">
+            <h1>OliTech</h1>
+            <p>Tienda y taller de tecnologia</p>
+            <div class="wrap-cta">
+                <a href="#mas-info" class="cta-a">Mas informacion</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section logos-section">
+        <div class="wrap-logos-section">
+            <img src="/Img/logotipo-de-apple.png" alt="" class="logo-brand">
+        </div>
+    </section>
+    
+    <section class="section servicios-section">
+        <div class="wrap-title-section">
+            <h2>Renueva Tu iPhone</h2>
+        </div>
+    </section>
+
+    <section class="section two-colum-section">
+        <div class="wrap-two-colum">
+            <div class="wrap-img_two-colum">
+                <img src="/Img/services_bateria.jpg" alt="">
+            </div>
+
+            <div class="wrap-img_two-colum">
+                <div class="wrap-text-colum">
+                    <h3 id="mas-info">Cambio de Batería para iPhone Sin Mensaje de "Pieza Desconocida"</h3>
+                    <p>¿Está buscando una solución confiable para el cambio de batería de su iPhone? En nuestro servicio, ofrecemos una experiencia óptima que garantiza el funcionamiento adecuado de su dispositivo, sin el inconveniente del molesto mensaje de "pieza desconocida". 
+                        
+                    Baterías de Alta Calidad: Solo trabajamos con baterías de la más alta calidad, garantizando que su iPhone obtenga un rendimiento óptimo y duradero después del cambio. Proceso Rápido y Eficiente: sabemos lo importante que es su dispositivo para usted. Nuestro proceso de cambio de batería es rápido y eficiente, permitiéndole volver a utilizar su iPhone en el menor tiempo posible.</p>
+            </div>   
+        </div>
+    </section>
+
+    <section class="section two-colum-section form">
+        <div class="wrap-two-colum">
+            <div class="wrap-img_two-column-form">
+                <div class="wrap-text-colum">
+                    <h3>Contactanos!</h3>
+                    <form onsubmit="enviarWhatsApp  (event)" class="form">
+                        <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        <label for="asunto">Asunto:</label>
+                            <input type="text" id="asunto" name="asunto" required>
+                        <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required>
+                            </textarea>
+                            <input type="submit" value="Enviar a WhatsApp" class="btn">
+                    </form>
+                
+                    <script>
+                        function enviarWhatsApp(event) {
+                        event.preventDefault(); // Prevenir el envío del formulario
+                        // Obtener los datos del formulario
+                        const nombre = document.getElementById("nombre").value;
+                        const asunto = document.getElementById("asunto").value;
+                        const mensaje = document.getElementById("mensaje").value;
+                        // Número de WhatsApp con código de país (sin +)
+                        const telefono = "5491133529327"; // Cambia este número
+                        // Crear el texto del mensaje
+                        const textoMensaje = `Nombre: ${nombre}%0AAsunto: ${asunto}%0AMensaje: ${mensaje}`;
+                        const url = `https://wa.me/${telefono}?text=${textoMensaje}`;
+                        // Abrir el enlace en una nueva ventana o pestaña
+                        window.open(url, "_blank");
+                        }
+                    </script>
+                </div>
+            </div>
+                <div class="wrap-img_two-column-form">
+                    <img src="/Img/iphone-13-pro-max-7173413_1280.jpg" alt="">
+                </div>
+        </div>
+    </section>
+    
+    <footer class="footer-section">
+        <div class="wrap-footer-section">
+            <div class="wrap-social-logos">
+                <ul>
+                    <li class="social-logo">
+                        <a href=" ">
+                            <img src="/Img/OLITECHLOGO.png" alt="" class="social-logo">
+                        </a>
+                    </li>
+                    <li class="social-logo">
+                        <a href="https://www.instagram.com/oli.tech_/profilecard/?igsh=YzYwZzhzcmt6N3R1" target="_blank">
+                            <img src="/Img/icons8-instagram-48.png" alt="" class="social-logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-footer-section">
+            <div class="footer-credits">
+                <p>©copytight 2024 - OliTech - Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

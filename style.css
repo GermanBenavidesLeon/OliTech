@@ -1,0 +1,314 @@
+:root{
+    --main-c:#e60ee6b2;
+    --border-radius: .2rem;
+}
+
+/** Estilos generales **/
+
+html *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.wrap-cta{
+    padding: 1.5rem 0;
+}
+
+.cta-a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: var(--main-c);
+    padding: .5rem 1rem;
+    border-radius: var(--border-r);
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3
+{
+    font-size: 2.2rem;
+}
+
+.header-landing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    padding: 0.10rem;
+}
+
+.logo-header{
+    max-width: 150px;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-section{
+    height: 90vh;
+    background: url(/Img/pexels-lastly-719399.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(106, 141, 163, 0.7);
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+}
+
+.wrap-hero-section{
+    max-width: 600px;
+    color: #fff;
+    padding: 15%;
+}
+
+/** logo brand sectio **/
+
+.section{
+    margin: 5rem 0;
+}
+
+.section h2{
+    padding: 2rem 0;
+}
+
+.wrap-logos-section{
+    display:flex;
+    justify-content: center;
+    margin: 3rem 5rem;
+}
+
+.logo-brand {
+    width: 160px;
+    padding: 1rem 0;
+    margin: 1rem;
+}
+
+/** wrap title **/
+
+.wrap-title-section{
+    display: flex;
+    justify-content: center;
+    margin: 3rem 1rem;
+}
+
+/** servicios section **/
+
+.wrap-servicios-section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.item-servicios-section{
+    padding: 1rem;
+}
+
+.item-servicios-section img{
+    width: 350px;
+    height: 225px;
+}
+
+/** two colum section **/
+
+.wrap-two-colum{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.wrap-img_two-colum{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.wrap-img_two-colum img{
+    width: 400px;
+    height: auto;
+    border-radius: 0.25rem;
+}
+.wrap-text-colum p{
+    padding-bottom: 1rem;
+    text-align: justify;
+}
+
+/** Form Section **/
+
+.form {
+    padding: 1rem;
+  }
+
+  .wrap-img_two-colum-form{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+  .wrap-img_two-column-form img{
+    width: 500px;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+
+  .wrap-text-colum h3{
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+  
+  .form input, .form textarea{
+    padding: 0.80rem;
+    margin: 0.1rem 0;
+    display: flex;
+    width: 80%;
+    border: 2px solid #747373;
+    border-radius: 0.20rem;
+  }
+
+  .form textarea{
+    min-height: 200px;
+    margin-bottom: 2rem;
+  }
+  
+  .btn{
+    background: greenyellow;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/** Footer **/
+
+.footer-section{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .menu-footer-section{
+    padding: 1rem 0;
+  }
+  
+  .wrap-social-logos ul, .wrap-menu-footer-section ul{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-logo{
+    max-width: 75px;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .wrap-menu-footer-section ul li{
+    font-size: 1.1rem;
+    padding: 1.5rem;
+  }
+  
+  .footer-credits{
+    display: flex;
+    justify-content: center;
+  }
+
+  /** MEDIA QUERYS **/
+
+  /* Tablets */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 70vh;
+    }
+    
+    .wrap-hero-section {
+        padding: 10%;
+    }
+
+    .wrap-two-colum {
+        grid-template-columns: 1fr; /* Una sola columna en lugar de dos */
+    }
+
+    .logo-header {
+        max-width: 120px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2, h3 {
+        font-size: 1.8rem;
+    }
+
+    .item-servicios-section img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+    .header-landing {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    .hero-section {
+        height: 60vh;
+        background-position: center center;
+    }
+
+    .wrap-hero-section {
+        padding: 5%;
+        text-align: center;
+    }
+
+    .logo-header {
+        max-width: 100px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    .wrap-servicios-section,
+    .wrap-logos-section,
+    .wrap-two-colum {
+        display: block;
+    }
+
+    .wrap-img_two-colum img,
+    .wrap-img_two-column-form img {
+        width: 100%;
+    }
+
+    .form input, .form textarea {
+        width: 90%;
+    }
+}
